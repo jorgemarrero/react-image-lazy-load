@@ -121,7 +121,7 @@ export default class LazyLoad extends Component {
     }
     
     if(visible && !loaded) {
-      return <img {...imageProps} />
+      return <img {...imageProps} className="blur"/>
     } else if(visible && loaded) {
       return <img {...imageProps} src={originalSrc} />
     } else if(!visible && !loaded) {
